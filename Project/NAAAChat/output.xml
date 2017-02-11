@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><?xml-stylesheet type='text/xsl' href='Msg.xsl' ?>
+<MyMsg>
+    <Header>Chat History</Header>
+    <Msg font="Arial" size="26" color="color:rgb(153,0,0)">
+        <from>adel</from>
+        <to>nour</to>
+        <date>2017-02-09T14:09:36.252+02:00</date>
+        <body>hi</body>
+        <me>true</me>
+    </Msg>
+    <Msg font="Arial" size="20" color="color:rgb(0,26,128)">
+        <from>nour</from>
+        <to>adel</to>
+        <date>2017-02-09T14:10:00.233+02:00</date>
+        <body>hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh</body>
+        <me>false</me>
+    </Msg>
+    <Msg font="Arial" size="26" color="color:rgb(153,0,0)">
+        <from>adel</from>
+        <to>nour</to>
+        <date>2017-02-09T14:15:19.581+02:00</date>
+        <body>hello</body>
+        <me>true</me>
+    </Msg>
+    <Msg font="Arial" size="20" color="color:rgb(0,0,0)">
+        <from>nour</from>
+        <to>adel</to>
+        <date>2017-02-09T14:15:26.579+02:00</date>
+        <body>hi</body>
+        <me>false</me>
+    </Msg>
+</MyMsg>

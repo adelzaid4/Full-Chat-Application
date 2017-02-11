@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane prefHeight="488.0" prefWidth="500.0" styleClass="bgGradient" stylesheets="@viewpkg/categorypkg/cssbg.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viewpkg.categorypkg.FXMLCategoryController">
+   <left>
+      <FlowPane prefHeight="367.0" prefWidth="500.0" BorderPane.alignment="CENTER">
+         <children>
+              <VBox prefHeight="338.0" prefWidth="500.0" spacing="20" styleClass="GroupList">
+                
+                  <HBox spacing="10" styleClass="GroupName">
+                      <TextField id="GroupNameIMG" fx:id="categoryName" prefHeight="37.0" prefWidth="334.0" promptText="Category Name" styleClass="TextFieldName">
+                          <tooltip>
+                              <Tooltip text="Category Name" />
+                          </tooltip> 
+                      </TextField>
+                  </HBox>
+                  <HBox spacing="10" styleClass="GroupList">
+                      <ListView fx:id="listViewOfFriends" prefHeight="184.0" prefWidth="337.0" />
+                  </HBox>
+                   <HBox spacing="20" styleClass="GroupList">
+                  <Button fx:id="btn" onAction="#createCategory" prefHeight="39.0" prefWidth="113.0" styleClass="buttonLogin" text="Create&gt;&gt;" />
+              </HBox>
+              </VBox>
+         </children>
+      </FlowPane>
+   </left>
+   <top>
+      <FlowPane prefHeight="125.0" prefWidth="500.0">
+         <children>
+            <AnchorPane prefHeight="46.0" prefWidth="500.0">
+               <children>
+                  <Button layoutX="460.0" layoutY="7.0" onAction="#ExitButton" prefHeight="20.0" prefWidth="26.0" styleClass="exit-button" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+             <FlowPane prefHeight="61.0" prefWidth="500.0" styleClass="flow-pane">
+                  <children>
+                      <ImageView fitHeight="59.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                          <image>
+                              <Image url="@viewpkg/categorypkg/add_group.png" />
+                          </image>
+                      </ImageView>
+                      <Label prefHeight="65.0" prefWidth="250.0" styleClass="header" text="Create Category" textAlignment="JUSTIFY" />
+                  </children>
+              </FlowPane>
+         </children>
+      </FlowPane>
+   </top>
+    
+</BorderPane>

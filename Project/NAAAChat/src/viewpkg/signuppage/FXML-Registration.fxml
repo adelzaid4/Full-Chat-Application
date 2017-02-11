@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane id="BorderPane" prefHeight="723.0" prefWidth="700.0" styleClass="bgGradient" stylesheets="@viewpkg/signuppage/cssbg.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viewpkg.signuppage.FXMLRegistrationController">
+    <center>
+        <FlowPane orientation="VERTICAL" prefHeight="600.0" prefWidth="650.0" styleClass="flow-pane" BorderPane.alignment="CENTER">
+            <children>
+                <VBox prefHeight="416.0" prefWidth="560.0" spacing="5" styleClass="flow-pane">
+                    
+                    <HBox prefHeight="121.0" prefWidth="560.0" spacing="20" styleClass="GroupList">
+                        <AnchorPane prefHeight="121.0" prefWidth="560.0">
+                            <children>                   
+                                <ImageView fx:id="userImg" fitHeight="150.0" fitWidth="150.0" layoutX="181.0" pickOnBounds="true" preserveRatio="true" />
+                                <Button layoutX="315.0" layoutY="2.0" mnemonicParsing="false" onAction="#removeImage" prefHeight="20.0" prefWidth="4.0" styleClass="closeImage" />
+                            </children>
+                        </AnchorPane>
+                    </HBox>
+                    <HBox spacing="20">                   
+                        <Label prefHeight="18.0" prefWidth="306.0" />
+                    </HBox>
+                    <HBox spacing="20">                   
+                        <TextField id="RegisterNameIMG" fx:id="firstName" prefHeight="45.0" prefWidth="250.0" promptText="First Name " styleClass="TextFieldName">
+                            <tooltip>
+                                <Tooltip text="Your First Name" />
+                            </tooltip>
+                        </TextField>
+                        <TextField id="RegisterNameIMG" fx:id="lastName" prefHeight="45.0" prefWidth="250.0" promptText="Last Name" styleClass="TextFieldName">
+                            <tooltip>
+                                <Tooltip text="Your Last Name" />
+                            </tooltip>
+                        </TextField>
+                    </HBox>
+                    <HBox spacing="20">                   
+                        <Label fx:id="firstNameValidation" prefHeight="15.0" prefWidth="242.0" styleClass="validation" />
+                        <Label fx:id="lastNameValidation" prefHeight="15.0" prefWidth="252.0" styleClass="validation" />
+                    </HBox>
+                    <HBox spacing="20">                   
+                        <TextField id="LoginEmailIMG" fx:id="emailField" prefHeight="45.0" prefWidth="520.0" promptText="Email" styleClass="TextFieldName">
+                            <tooltip>
+                                <Tooltip text="Ex: xxx@xxxx.xxx" />
+                            </tooltip>
+                        </TextField>
+                    </HBox>
+                    <HBox spacing="20">                   
+                        <Label fx:id="emailValidation" prefHeight="15.0" prefWidth="539.0" styleClass="validation" />
+                    </HBox>
+                    <HBox spacing="20">                   
+                        <PasswordField id="LoginPasswordIMG" fx:id="passwordField" prefHeight="45.0" prefWidth="250.0" promptText="Password" styleClass="TextFieldName">
+                            <tooltip>
+                                <Tooltip text="Use letters,numbers,special characters" />
+                            </tooltip>
+                        </PasswordField>
+                        <PasswordField id="LoginPasswordIMG" fx:id="confirmPasswordField" prefHeight="45.0" prefWidth="250.0" promptText="Confirm Password" styleClass="TextFieldName">
+                            <tooltip>
+                                <Tooltip text="Confirm Password" />
+                            </tooltip>
+                        </PasswordField>
+                    
+                    </HBox>
+                    <HBox spacing="20">                   
+                        <Label fx:id="passwordValidation" prefHeight="15.0" prefWidth="250.0" styleClass="validation" />
+                        <Label fx:id="confirmPasswordValidation" prefHeight="15.0" prefWidth="250.0" styleClass="validation" />
+                    </HBox>
+                    <HBox spacing="20">   
+                        <ComboBox id="RegisterGenderIMG" fx:id="genderChooser" prefHeight="45.0" prefWidth="250.0" promptText="Choose Gender" styleClass="TextFieldName" />                 
+                        <DatePicker fx:id="dateChooser" prefHeight="45.0" prefWidth="250.0" promptText="Choose Your BirthDate " styleClass="TextFieldName" />  
+                    </HBox>
+                    <HBox spacing="20">                   
+                        <Label prefHeight="18.0" prefWidth="306.0" />
+                    </HBox>
+                    <HBox spacing="20" styleClass="GroupList">  
+                        <ComboBox id="RegisterCountryIMG" fx:id="countryChooser" prefHeight="45.0" prefWidth="250.0" promptText="Choose Country" styleClass="TextFieldName" /> 
+                    </HBox>
+                    <HBox spacing="20">                   
+                        <Label prefHeight="18.0" prefWidth="306.0" />
+                    </HBox>
+                    
+                    
+                    <HBox spacing="20" styleClass="GroupList">
+                        <Button fx:id="button" mnemonicParsing="false" onAction="#SignUpAction" styleClass="buttonLogin" text="Sign Up &gt;&gt;" />
+                    </HBox>
+                </VBox>
+            </children>
+        </FlowPane>
+    </center>
+    <top>
+        <FlowPane prefHeight="73.0" prefWidth="700.0" styleClass="flow-pane" BorderPane.alignment="CENTER">  
+            <AnchorPane prefHeight="23.0" prefWidth="700.0">
+                <children>
+                    <Button fx:id="backbtn" layoutX="14.0" layoutY="6.0" onAction="#BackButton" prefHeight="34.0" prefWidth="41.0" styleClass="back-button" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                    <Button fx:id="exitbtn" layoutX="638.0" layoutY="7.0" onAction="#ExitButton" prefHeight="33.0" prefWidth="38.0" styleClass="exit-button" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                </children>
+            </AnchorPane>
+            <FlowPane prefHeight="61.0" prefWidth="700.0" styleClass="flow-pane">
+                <children>
+                    <ImageView fitHeight="59.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@viewpkg/signuppage/reg.png" />
+                        </image>
+                    </ImageView>
+                    <Label prefHeight="40.0" prefWidth="230.0" styleClass="header" text="Register Now " />
+                </children>
+            </FlowPane>
+        </FlowPane>
+        <!--  <VBox prefHeight="70.0" prefWidth="650.0" spacing="10" BorderPane.alignment="TOP_CENTER">
+            <children>
+                <FlowPane prefHeight="61.0" prefWidth="700.0" styleClass="flow-pane">
+                    <children>
+                        <HBox prefHeight="65.0" prefWidth="600.0" spacing="130">
+                            <ImageView fx:id="backbtn" fitHeight="30.0" fitWidth="30.0">
+                                <image>
+                                    <Image url="@viewpkg/signuppage/reply.png" />
+                                </image>
+                            </ImageView>
+                            <HBox spacing="5">
+                                <ImageView fitHeight="54.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@viewpkg/signuppage/reg.png" />
+                                    </image>
+                                </ImageView>
+                                <Label prefHeight="43.0" prefWidth="231.0" styleClass="header" />
+                            </HBox>
+                        </HBox>
+                    </children>
+                </FlowPane>
+            </children>
+        </VBox> -->
+    </top>
+</BorderPane>

@@ -1,0 +1,8 @@
+**Here is the instructions you need to run NAAA Chat Application:
+1-Run Database script 
+2-Go to NAAAServer >> Model Package >> DBHandlerpkg >> DBHandler.. and change your connection Username & Password
+3-Run the server through ServerController under Controller Package
+4-Login with Admin name as : NAAA and Password:naaa123
+5-After Login you'll find Start and Stop buttons , Please click on Start to run the server.
+6-Then you've to go to NAAAChat which represnts the Client Application , you'll have to run from MainClass under startpkg Package.
+7-Finally , a user friendly GUI will open and you can SignUp or SignIn and your journy will start. 

@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+    <xs:element name="MyMsg" type="MyMsgType"/>
+        <xs:complexType name="MyMsgType">
+            <xs:sequence>
+                <xs:element name="Header" type="xs:string"/>
+                <xs:element name="Msg"  type="MsgsType" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+          
+                    <xs:complexType name="MsgsType">
+                        <xs:sequence>
+                            <xs:element name="from" type="xs:string"/>
+                            <xs:element name="to" type="xs:string" maxOccurs="unbounded"/>
+                            <xs:element name="date" type="xs:dateTime" minOccurs="0"/>
+                            <xs:element name="body" type="xs:string"/>
+                        </xs:sequence> 
+                        <xs:attribute name="font" type="xs:string"/>
+                        <xs:attribute name="size" type="xs:positiveInteger" />
+                        <xs:attribute name="color" type="xs:string"/>
+                    </xs:complexType>
+</xs:schema>

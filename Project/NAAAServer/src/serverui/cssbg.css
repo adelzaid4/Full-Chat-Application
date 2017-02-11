@@ -1,0 +1,162 @@
+
+.bgGradient{
+    -fx-background-image: url("bg.jpg");
+     -fx-background-repeat: stretch; 
+     -fx-background-size:cover;  
+}
+
+.loginLabel{
+    -fx-font: 12px fantasy;
+    -fx-padding: 10px;
+    -fx-margin:10px;
+    -fx-text-fill: #FFBB29; 
+}
+
+.tooltip {
+    -fx-background-radius: 2 2 2 2;
+    -fx-background-color: #194d4d;
+    -fx-text-fill: white;
+}
+
+.header {
+    -fx-font: 17px fantasy;
+    -fx-text-fill: #FFBB29;
+    -fx-font-weight: bold;
+    -fx-text-alignment: center;
+    -fx-alignment: center;
+}
+
+.textarea .content{
+    -fx-prompt-text-fill: white;
+   -fx-font-family: fantasy;
+   -fx-text-fill: white;
+   -fx-background-color: #194d4d;
+   -fx-background-radius: 10, 10, 10, 10;
+}
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-opacity: 0;
+}
+
+.tab-pane
+{
+    -fx-tab-min-width:90px;
+}
+
+.tab{
+    -fx-background-insets: 0 1 0 1,0,0;
+}
+.tab-pane .tab
+{
+    -fx-background-color: #e6e6e6;
+
+}
+
+.tab-pane .tab:selected
+{
+    -fx-background-color: #3c3c3c;
+}
+
+.validatLabel{
+    -fx-text-fill: white;
+}
+
+.tab .tab-label { 
+    -fx-alignment: CENTER;
+    -fx-text-fill: #828282;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+
+.tab:selected .tab-label { 
+    -fx-alignment: CENTER;
+    -fx-text-fill: #96b946;
+}
+.node {
+    -fx-font-style: italic;
+   -fx-font-family: fantasy;
+   -fx-text-fill: white;
+   -fx-background-color: #ffdd94;
+   -fx-background-radius: 10, 10, 10, 10;
+}
+
+.flow-pane{
+    -fx-alignment: center;
+    -fx-padding:10px;
+}
+
+.GroupName{
+     -fx-alignment: center;
+}
+
+.GroupList{
+     -fx-alignment: center;
+}
+
+.TextField{
+   -fx-prompt-text-fill: white;
+   -fx-font-style: italic;
+   -fx-font-weight: bold;
+   -fx-font-family: fantasy;
+   -fx-text-fill: white;
+   -fx-background-color: transparent, #194d4d;
+   -fx-color: #194d4d;
+   -fx-opacity: 0.7;
+   -fx-background-radius: 10, 10, 10, 10;
+   -fx-padding:10px;
+}
+.TextField:focused{
+   -fx-prompt-text-fill: white;
+   -fx-font-style: italic;
+   -fx-font-weight: bold;
+   -fx-font-family: fantasy;
+   -fx-text-fill: white;
+   -fx-background-color: transparent, #194d4d;
+   -fx-color: #194d4d;
+   -fx-opacity: 0.7;
+   -fx-background-radius: 10, 10, 10, 10;
+   -fx-padding:10px;
+   -fx-effect: dropshadow( one-pass-box , #6f9b96  , 3,3,2,2 ); 
+}
+
+.validation{
+    -fx-text-fill: #601f1f;
+    -fx-font: 10px fantasy;
+    -fx-alignment: center;
+}
+
+.date-picker .text-field {
+    -fx-control-inner-background: #194d4d ;
+    -fx-control-prompt-text-fill: white;
+    -fx-prompt-text-fill: white;
+    -fx-text-fill:white;
+}
+
+.button{ 
+    -fx-pref-width: 80px;
+    -fx-background-color: #289e90 ;
+    -fx-font: 12px fantasy;
+    -fx-text-fill: white; 
+    -fx-font-style: italic;
+   -fx-font-weight: bold;
+}
+.button:hover{ 
+    -fx-pref-width: 90px;
+    -fx-background-color: #289e90 ;
+    -fx-font: 12px fantasy;
+    -fx-text-fill: white; 
+    -fx-font-style: italic;
+   -fx-font-weight: bold;  
+   -fx-effect: dropshadow( one-pass-box , #6f9b96  , 3,3,2,2 ); 
+}
+
+.button:pressed{ 
+    -fx-pref-width: 90px;
+    -fx-background-color: #289e90 ;
+    -fx-font: 12px fantasy;
+    -fx-text-fill: #FFBB29; 
+    -fx-font-style: italic;
+   -fx-font-weight: bold;  
+    
+}
+
+

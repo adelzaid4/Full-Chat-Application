@@ -1,0 +1,165 @@
+.rootPane{
+  -fx-border-insets: 23;
+  -fx-background-insets: 23;
+  -fx-background-radius: 6;
+  -fx-border-radius: 10;
+  -fx-border-color: gray;
+  -fx-border-style: solid;
+  -fx-border-width: 3;
+  -fx-effect: dropshadow(three-pass-box, rgba(100, 100, 100, 1), 24, 0.5, 0, 0);
+}
+.bgGradient{
+    -fx-background-image: url("bg.jpg");
+     -fx-background-repeat: stretch; 
+     -fx-background-size:cover;  
+}
+.Status{
+   -fx-prompt-text-fill: white;
+   -fx-font-style: italic;
+   -fx-font-weight: bold;
+   -fx-font-family: fantasy;
+   -fx-text-fill: white;
+   -fx-background-color: #194d4d;
+   -fx-color: #194d4d;
+   -fx-opacity: 0.7;
+   -fx-background-radius: 10, 10, 10, 10;
+   -fx-padding:10px;
+   -fx-margin: 10px;
+}
+.add_user{
+    -fx-background-image : url("new-user.png");
+    -fx-background-color: transparent;
+     -fx-background-repeat:no-repeat;
+     -fx-backgrount-position: center;
+}
+.add_group{
+    -fx-background-image : url("addgrp.png");
+    -fx-background-color: transparent;
+     -fx-background-repeat:no-repeat;
+     -fx-backgrount-position: center;
+}
+.settings{
+    -fx-background-image : url("menu.png");
+    -fx-background-color: transparent;
+    -fx-background-repeat:no-repeat;
+}
+.search{
+    -fx-background-image : url("search.png");
+    -fx-background-color: transparent;
+     -fx-background-repeat:no-repeat;
+     -fx-backgrount-position: left;
+}
+.tooltip {
+    -fx-background-radius: 2 2 2 2;
+    -fx-background-color: #194d4d;
+    -fx-text-fill: white;
+}
+.header {
+    -fx-font: 30px fantasy;
+    -fx-padding: 10px;
+    -fx-margin:10px;
+    -fx-text-fill: #FFBB29;
+    -fx-font-weight: bold;
+}
+
+.node {
+    -fx-font-style: italic;
+    -fx-pref-width: 150px;
+   -fx-font-family: fantasy;
+   -fx-text-fill: white;
+   -fx-background-color: #ffdd94;
+   -fx-background-radius: 2, 2, 2, 2;
+}
+
+.flow-pane{
+    -fx-alignment: center;
+    -fx-padding:10px;
+}
+
+.GroupName{
+     -fx-alignment: center;
+}
+
+.GroupList{
+     -fx-alignment: center;
+}
+
+.TextFieldName{
+   -fx-prompt-text-fill: white;
+   -fx-font-style: italic;
+   -fx-font-weight: bold;
+   -fx-font-family: fantasy;
+   -fx-text-fill: white;
+   -fx-background-color: transparent, #194d4d;
+   -fx-color: #194d4d;
+   -fx-opacity: 0.7;
+   -fx-background-radius: 10, 10, 10, 10;
+   -fx-padding:10px;
+}
+.TextFieldName:focused{
+   -fx-prompt-text-fill: white;
+   -fx-font-style: italic;
+   -fx-font-weight: bold;
+   -fx-font-family: fantasy;
+   -fx-text-fill: white;
+   -fx-background-color: transparent, #194d4d;
+   -fx-color: #194d4d;
+   -fx-opacity: 0.7;
+   -fx-background-radius: 10, 10, 10, 10;
+   -fx-padding:10px;
+   -fx-effect: dropshadow( one-pass-box , #6f9b96  , 3,3,2,2 ); 
+}
+.validation{
+    -fx-text-fill: white;
+    -fx-font: 12px fantasy;
+    -fx-alignment: center;
+}
+
+#checkbox{
+     -fx-font-style: italic;
+   -fx-font-weight: bold;
+   -fx-font-family: fantasy;
+    -fx-text-fill: white;
+}
+
+.date-picker .text-field {
+    -fx-control-inner-background: #194d4d ;
+    -fx-control-prompt-text-fill: white;
+    -fx-prompt-text-fill: white;
+    -fx-text-fill:white;
+}
+
+.ListViewStyle{
+    -fx-background-color: transparent, #194d4d;
+     -fx-opacity: 0.8;
+   -fx-background-radius: 10, 10, 10, 10;
+}
+.node{
+    -fx-background-color: #194d4d;
+    -fx-background-radius: 10px;
+}
+.text{
+    -fx-font-weight: bold;
+   -fx-font-family: 12px fantasy;
+    -fx-text-fill: white;
+}
+.buttonGroup{
+    -fx-pref-width: 120px;
+    -fx-background-color: transparent ;
+    -fx-alignment: CENTER;
+    -fx-font: 20px fantasy;
+    -fx-padding: 10px;
+    -fx-margin: 5px;
+    -fx-text-fill: #FFBB29;
+    -fx-font-weight: bold;
+     -fx-background-image: url("arr.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: right 10 center;
+}
+
+.NoAccountLabel{
+   -fx-font: 12px fantasy;
+    -fx-text-fill: white;
+    -fx-font-weight: bold; 
+}
+

@@ -1,0 +1,197 @@
+
+
+.loginLabel{
+    -fx-font: 12px fantasy;
+    -fx-padding: 10px;
+    -fx-margin:10px;
+    -fx-text-fill: #FFBB29; 
+}
+.rootPane{
+  -fx-border-insets: 23;
+  -fx-background-insets: 23;
+  -fx-background-radius: 6;
+  -fx-border-radius: 10;
+  -fx-border-color: gray;
+  -fx-border-style: solid;
+  -fx-border-width: 3;
+  -fx-effect: dropshadow(three-pass-box, rgba(100, 100, 100, 1), 24, 0.5, 0, 0);
+}
+.back-button{
+    -fx-background-image : url("back.png");
+    -fx-background-color: transparent;
+     -fx-background-repeat:no-repeat;
+     -fx-backgrount-position: center;
+}
+
+.exit-button{
+    -fx-background-image : url("l.png");
+    -fx-background-color: transparent;
+     -fx-background-repeat:no-repeat;
+     -fx-backgrount-position: center;
+}
+
+.bgGradient{
+    -fx-background-image: url("bg.jpg");
+     -fx-background-repeat: stretch; 
+     -fx-background-size:cover;  
+}
+
+.tooltip {
+    -fx-background-radius: 2 2 2 2;
+    -fx-background-color: #194d4d;
+    -fx-text-fill: white;
+}
+.header {
+    -fx-font: 30px fantasy;
+    -fx-padding: 10px;
+    -fx-margin:10px;
+    -fx-text-fill: #FFBB29;
+    -fx-font-weight: bold;
+}
+
+.flow-pane{
+    -fx-alignment: center;
+    -fx-padding:10px;
+}
+
+.GroupName{
+     -fx-alignment: center;
+}
+
+.GroupList{
+     -fx-alignment: center;
+}
+
+.TextFieldName{
+   -fx-prompt-text-fill: white;
+   -fx-font-style: italic;
+   -fx-font-weight: bold;
+   -fx-font-family: fantasy;
+   -fx-text-fill: white;
+   -fx-background-color: transparent, #194d4d;
+   -fx-color: #194d4d;
+   -fx-opacity: 0.7;
+   -fx-background-radius: 10, 10, 10, 10;
+   -fx-padding:10px;
+}
+.TextFieldName:focused{
+   -fx-prompt-text-fill: white;
+   -fx-font-style: italic;
+   -fx-font-weight: bold;
+   -fx-font-family: fantasy;
+   -fx-text-fill: white;
+   -fx-background-color: transparent, #194d4d;
+   -fx-color: #194d4d;
+   -fx-opacity: 0.7;
+   -fx-background-radius: 10, 10, 10, 10;
+   -fx-padding:10px;
+   -fx-effect: dropshadow( one-pass-box , #6f9b96  , 3,3,2,2 ); 
+}
+
+.validation{
+    -fx-text-fill: #601f1f;
+    -fx-font: 10px fantasy;
+    -fx-alignment: center;
+}
+
+#checkbox{
+     -fx-font-style: italic;
+   -fx-font-weight: bold;
+   -fx-font-family: fantasy;
+    -fx-text-fill: white;
+}
+
+#GroupNameIMG{
+   -fx-background-image: url("name1.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: right  10 center;
+}
+
+#LoginEmailIMG{
+   -fx-background-image: url("mail.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: right  10 center;
+}
+#LoginPasswordIMG{
+   -fx-background-image: url("password.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: right  10 center;
+}
+#RegisterNameIMG{
+   -fx-background-image: url("name.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: right  10 center;
+}
+#RegisterCountryIMG{
+   -fx-background-image: url("flag.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: right  10 center;
+}
+#RegisterGenderIMG{
+   -fx-background-image: url("gender.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: right  10 center;
+}
+#RegisterMobileIMG{
+   -fx-background-image: url("mobile.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: right  10 center;
+}
+.date-picker .text-field {
+    -fx-control-inner-background: #194d4d ;
+    -fx-control-prompt-text-fill: white;
+    -fx-prompt-text-fill: white;
+    -fx-text-fill:white;
+}
+
+.ListViewStyle{
+    -fx-background-color: transparent, #194d4d;
+     -fx-opacity: 0.8;
+   -fx-background-radius: 10, 10, 10, 10;
+}
+
+.buttonGroup{
+    -fx-pref-width: 120px;
+    -fx-background-color: transparent ;
+    -fx-alignment: CENTER;
+    -fx-font: 20px fantasy;
+    -fx-padding: 10px;
+    -fx-margin: 5px;
+    -fx-text-fill: #FFBB29;
+    -fx-font-weight: bold;
+     -fx-background-image: url("arr.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: right 10 center;
+}
+
+.NoAccountLabel{
+   -fx-font: 12px fantasy;
+    -fx-text-fill: white;
+    -fx-font-weight: bold; 
+}
+.signUpbutton{
+   -fx-font: 12px fantasy;
+    -fx-text-fill: white;
+    -fx-font-weight: bold; 
+    -fx-underline: true;
+    -fx-background-color: transparent ;
+}
+.signUpbutton:hover{
+    -fx-alignment: center;
+   -fx-font: 13px fantasy;
+    -fx-text-fill: #289e90;
+    -fx-font-weight: bold; 
+    -fx-underline: true;
+    -fx-cursor: hand;
+    -fx-background-color: transparent ;
+}
+.signUpbutton:pressed{
+    -fx-alignment: center;
+   -fx-font: 13px fantasy;
+    -fx-text-fill: #FFBB29;
+    -fx-font-weight: bold; 
+    -fx-underline: true;
+    -fx-cursor: hand;
+    -fx-background-color: transparent ;
+}
+
